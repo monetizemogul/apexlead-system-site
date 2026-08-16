@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="iconBg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#071b30" />
+      <stop offset="60%" stop-color="#020814" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+
+    <linearGradient id="chrome3D" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#e2e8f0" />
+      <stop offset="50%" stop-color="#64748b" />
+      <stop offset="75%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+
+    <linearGradient id="cyanNeon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#00d8ff" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <linearGradient id="peakLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <linearGradient id="peakDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="35%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <filter id="iconGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="b1" />
+      <feGaussianBlur stdDeviation="16" result="b2" />
+      <feMerge>
+        <feMergeNode in="b2" />
+        <feMergeNode in="b1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Rounded Squircle Dark Container -->
+  <rect width="200" height="200" rx="44" fill="url(#iconBg)" />
+  <rect x="3" y="3" width="194" height="194" rx="41" fill="none" stroke="url(#cyanNeon)" stroke-width="2.5" opacity="0.85" />
+  
+  <!-- Subtle Inner Cyber Grid -->
+  <g opacity="0.18" stroke="#00f0ff" stroke-width="1">
+    <line x1="20" y1="100" x2="180" y2="100" />
+    <line x1="100" y1="20" x2="100" y2="180" />
+    <circle cx="100" cy="100" r="70" fill="none" />
+  </g>
+
+  <!-- Outer Neon Delta Aura -->
+  <polygon points="100,24 175,160 25,160" fill="none" stroke="#00f0ff" stroke-width="6" opacity="0.4" filter="url(#intenseGlow)" />
+
+  <!-- 3D Chrome Beveled Delta Frame -->
+  <polygon points="100,28 170,156 142,156 100,74 58,156 30,156" fill="url(#chrome3D)" stroke="#0f172a" stroke-width="1" />
+  <!-- Bevel Shading & Highlights -->
+  <polygon points="100,28 100,74 142,156 170,156" fill="#ffffff" opacity="0.35" />
+  <polygon points="100,28 100,74 58,156 30,156" fill="#020617" opacity="0.45" />
+
+  <!-- Inner Cyan Neon Accent Frame -->
+  <polygon points="100,68 140,150 60,150" fill="none" stroke="#00f0ff" stroke-width="2.5" filter="url(#iconGlow)" />
+
+  <!-- Mountain Summit Inside Delta -->
+  <g transform="translate(100, 114)">
+    <!-- Dark Shaded Ridge -->
+    <polygon points="0,-48 -36,12 -58,34 0,34" fill="url(#peakDark)" />
+    <!-- Bright Snow Highlight Ridge -->
+    <polygon points="0,-48 30,8 58,34 0,34" fill="url(#peakLight)" />
+    <!-- Crevice Details -->
+    <polygon points="-24,0 -40,24 -15,34" fill="#020617" opacity="0.75" />
+    <polygon points="20,-2 42,22 10,34" fill="#f8fafc" opacity="0.9" />
+    <!-- Apex Summit Snowcap -->
+    <polygon points="0,-48 -10,-18 0,-4 10,-12" fill="#ffffff" />
+    
+    <!-- Top Summit Starburst Sparkle -->
+    <circle cx="0" cy="-50" r="9" fill="#ffffff" filter="url(#intenseGlow)" opacity="0.95" />
+    <circle cx="0" cy="-50" r="3.5" fill="#00d8ff" />
+    <line x1="0" y1="-62" x2="0" y2="-38" stroke="#ffffff" stroke-width="1.8" />
+    <line x1="-12" y1="-50" x2="12" y2="-50" stroke="#ffffff" stroke-width="1.8" />
+  </g>
+
+  <!-- Upward Soaring Growth Arrow Indicator -->
+  <g transform="translate(100, 118)">
+    <path d="M -22 30 Q -5 12 6 -10 L 0 -10 L 12 -28 L 20 -8 L 14 -8 Q 0 16 -14 34 Z" 
+          fill="#ffffff" stroke="#00d8ff" stroke-width="1.5" filter="url(#iconGlow)" />
+  </g>
+</svg>
