@@ -20,6 +20,7 @@ import { Footer } from './components/Footer';
 import { BookingModal } from './components/BookingModal';
 import { AIAdvisorChat } from './components/AIAdvisorChat';
 import { PricingPlan } from './types';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
@@ -156,6 +157,9 @@ export default function App() {
         onOpenBooking={() => handleOpenBooking()} 
         onOpenScanner={handleOpenScanner} 
       />
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
 
     </div>
   );
