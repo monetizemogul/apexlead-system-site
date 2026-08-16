@@ -18,6 +18,7 @@ import {
   MessageSquare
 } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/mockData';
+import { BrandLogo } from './BrandLogo';
 
 interface NavbarProps {
   onOpenScanner: () => void;
@@ -80,29 +81,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenScanner, onOpenBooking }) 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-1">
         <div className="flex items-center justify-between">
           
-          {/* Brand Logo */}
-          <a href="#" className="flex items-center gap-3 group" id="nav-brand-logo">
-            <div className="relative flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-slate-950 p-0.5 border border-cyan-500/40 shadow-lg shadow-cyan-500/20 group-hover:border-cyan-400 group-hover:shadow-cyan-400/40 group-hover:scale-105 transition-all duration-300 overflow-hidden">
-              <img
-                src="/logo.png"
-                alt="ApexLead Systems Logo"
-                className="w-full h-full object-contain"
-              />
-            </div>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-1.5">
-                <span className="font-extrabold text-lg sm:text-xl tracking-tight text-white font-sans">
-                  Apex<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-sky-300">Lead</span>
-                </span>
-                <span className="text-[11px] font-bold uppercase tracking-wider text-cyan-200 border border-cyan-500/40 bg-cyan-950/60 px-1.5 py-0.5 rounded shadow-sm">
-                  Systems
-                </span>
-              </div>
-              <span className="text-[10px] text-cyan-300 font-semibold tracking-wider uppercase flex items-center gap-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
-                AI Visibility Solutions
-              </span>
-            </div>
+          {/* Brand Logo (Responsive for phone and computer) */}
+          <a href="#" className="flex items-center group flex-shrink-0" id="nav-brand-logo">
+            <BrandLogo variant="responsive" />
           </a>
 
           {/* Desktop Nav Links */}

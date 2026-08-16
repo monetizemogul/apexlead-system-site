@@ -55,6 +55,33 @@ export const Hero: React.FC<HeroProps> = ({ onStartScan, onOpenBooking }) => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
+        {/* Brand Master Emblem Centerpiece */}
+        <div className="flex justify-center mb-5">
+          <div className="inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-slate-950/90 border border-cyan-500/40 shadow-xl shadow-cyan-500/15 backdrop-blur-xl">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl overflow-hidden bg-slate-950 p-0.5 border border-cyan-400/40 flex-shrink-0">
+              <img
+                src="/logo.png"
+                alt="ApexLead Systems Master Logo"
+                className="w-full h-full object-contain"
+                loading="eager"
+              />
+            </div>
+            <div className="flex flex-col text-left">
+              <div className="flex items-center gap-1.5">
+                <span className="font-black text-sm sm:text-base text-white tracking-tight">
+                  Apex<span className="text-cyan-400">Lead</span> Systems
+                </span>
+                <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-500/40 uppercase">
+                  AEO
+                </span>
+              </div>
+              <span className="text-[10px] text-slate-400 font-medium tracking-wide">
+                Seen • Found • Trusted • Chosen
+              </span>
+            </div>
+          </div>
+        </div>
+
         {/* Live System Ticker Badge */}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-800 text-xs text-slate-300 shadow-inner">

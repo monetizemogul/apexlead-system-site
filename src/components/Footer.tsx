@@ -13,6 +13,7 @@ import {
   MessageSquare
 } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/mockData';
+import { BrandLogo } from './BrandLogo';
 
 interface FooterProps {
   onOpenBooking: () => void;
@@ -41,23 +42,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onOpenScanner }) 
           
           {/* Col 1 & 2: Brand & Mission */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-slate-950 p-0.5 border border-cyan-500/40 shadow-lg shadow-cyan-500/20 overflow-hidden">
-                <img
-                  src="/logo.png"
-                  alt="ApexLead Systems Logo"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-extrabold text-lg text-white font-sans">
-                  Apex<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-sky-300">Lead</span> Systems
-                </span>
-                <span className="text-[10px] text-cyan-300 font-semibold uppercase tracking-wider">
-                  AI Visibility Solutions & AEO Engineering
-                </span>
-              </div>
-            </div>
+            <BrandLogo variant="responsive" />
 
             <p className="text-slate-400 leading-relaxed max-w-sm">
               We engineer local businesses into the #1 recommended answer across ChatGPT, Google Gemini AI Overviews, Perplexity AI, and Google Maps Local 3-Pack. 100% remote delivery worldwide via Zoom.
