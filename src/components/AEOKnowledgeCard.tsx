@@ -100,10 +100,12 @@ export const AEOKnowledgeCard: React.FC<AEOKnowledgeCardProps> = ({ onOpenBookin
           <div className="lg:col-span-6 bg-slate-900/80 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl shadow-black/50 backdrop-blur-xl relative">
             <div className="flex items-center justify-between pb-5 border-b border-slate-800">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-emerald-400 p-[1.5px]">
-                  <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-mono font-black text-indigo-300">
-                    ▲
-                  </div>
+                <div className="w-11 h-11 rounded-xl bg-slate-950 p-0.5 border border-cyan-500/40 shadow-md shadow-cyan-500/20 overflow-hidden flex-shrink-0">
+                  <img
+                    src="/logo.png"
+                    alt="ApexLead Systems"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-white flex items-center gap-2">

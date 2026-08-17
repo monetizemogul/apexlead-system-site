@@ -141,13 +141,17 @@ END:VCALENDAR`;
         
         {/* Modal Header */}
         <div className="p-5 sm:p-6 border-b border-slate-800 flex items-center justify-between bg-slate-950/70">
-          <div className="flex items-center gap-2.5">
-            <div className="p-2 rounded-xl bg-gradient-to-tr from-indigo-600 to-emerald-500 text-white shadow-md">
-              <Video className="w-5 h-5" />
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-slate-950 p-0.5 border border-cyan-500/40 shadow-md shadow-cyan-500/20 overflow-hidden flex-shrink-0 flex items-center justify-center">
+              <img
+                src="/logo.png"
+                alt="ApexLead Systems"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-white">
-                Book 1-on-1 Zoom AEO Strategy Session
+              <h3 className="text-lg font-bold text-white flex items-center gap-2">
+                <span>Book 1-on-1 Zoom AEO Strategy Session</span>
               </h3>
               <p className="text-xs text-slate-400">
                 15-Min Live Screen-Share Session • Serving Everywhere Worldwide via Zoom

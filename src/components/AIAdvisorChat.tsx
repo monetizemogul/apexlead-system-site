@@ -125,8 +125,12 @@ export const AIAdvisorChat: React.FC<AIAdvisorChatProps> = ({ onOpenBooking, onO
           {/* Header */}
           <div className="p-3.5 bg-gradient-to-r from-slate-950 via-slate-900 to-indigo-950 border-b border-slate-800 flex items-center justify-between">
             <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-xl bg-indigo-600 flex items-center justify-center text-white shadow-md">
-                <Bot className="w-4 h-4" />
+              <div className="w-8 h-8 rounded-xl bg-slate-950 p-0.5 border border-cyan-500/40 shadow-md shadow-cyan-500/20 overflow-hidden flex-shrink-0 flex items-center justify-center">
+                <img
+                  src="/logo.png"
+                  alt="ApexLead Systems"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <div className="text-xs font-bold text-white flex items-center gap-1.5">
